@@ -48,7 +48,7 @@ class ChatViewModel : ViewModel() {
     private val _messages = MutableStateFlow<List<ChatMessage>>(
         listOf(
             ChatMessage(
-                text = "Welcome to Private Chat! This interface is ready for local on-device AI execution. No external servers or data tracking are active.", 
+                text = "Welcome to Ultra Chat AI! This interface is powered by Gemini AI and ready for your commands.",
                 isUser = false
             )
         )
@@ -110,7 +110,7 @@ class ChatViewModel : ViewModel() {
                 // Build history context for the API
                 val contents = _messages.value.mapNotNull { msg ->
                     // Skip the initial welcome message from the assistant
-                    if (msg.text.startsWith("Welcome to Private Chat") && !msg.isUser) return@mapNotNull null
+                    if (msg.text.startsWith("Welcome to Ultra Chat AI") && !msg.isUser) return@mapNotNull null
                     
                     val role = if (msg.isUser) "user" else "model"
                     Content(role = role, parts = listOf(Part(text = msg.text)))
@@ -120,7 +120,7 @@ class ChatViewModel : ViewModel() {
                     contents = contents,
                     systemInstruction = Content(
                         role = "system",
-                        parts = listOf(Part(text = "You are a helpful on-device AI assistant integrated into the A16AIUI Android Launcher."))
+                        parts = listOf(Part(text = "You are Ultra Chat AI, a helpful, advanced, on-device AI assistant integrated into the A16AIUI Android Launcher."))
                     )
                 )
 

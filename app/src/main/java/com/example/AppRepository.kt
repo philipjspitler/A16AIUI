@@ -32,9 +32,9 @@ object DefaultAppCatalog {
     val catalog = listOf(
         AppCatalogItem(
             id = "app_chat",
-            name = "Private Chat",
-            subtitle = "Local On-Device AI",
-            description = "Private conversational AI engine operating 100% offline without sending data to external servers.",
+            name = "Ultra Chat AI",
+            subtitle = "Advanced AI Assistant",
+            description = "Your ultra-advanced AI engine, powered directly via the Gemini API.",
             category = AppCategory.AI_TOOLS,
             iconName = "chat",
             badge = "CORE",

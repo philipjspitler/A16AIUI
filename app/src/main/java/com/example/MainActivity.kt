@@ -776,7 +776,7 @@ fun ChatScreen(
         TopAppBar(
             title = {
                 Column {
-                    Text("Private Local AI", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                    Text("Ultra Chat AI", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                     Text(
                         text = "$sessionTitle • ${messages.size} msgs",
                         style = MaterialTheme.typography.labelSmall,
