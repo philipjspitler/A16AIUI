@@ -1,0 +1,6 @@
+{
+  "name": "A16AIUI",
+  "description": "Built-in intelligent Home Screen AI UI and launcher with autonomous Android Aide agent, on-device AI chat, multi-app workspace, and turbo app maker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
